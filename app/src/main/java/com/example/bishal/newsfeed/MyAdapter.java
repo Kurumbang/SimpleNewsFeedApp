@@ -29,7 +29,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.custom_row_news_item,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.custom_row_news_item,parent,false);
         MyViewHolder holder = new MyViewHolder(view);
         return holder;
     }

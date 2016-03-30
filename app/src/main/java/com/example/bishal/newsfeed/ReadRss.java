@@ -3,6 +3,7 @@ package com.example.bishal.newsfeed;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
+import android.os.Parcelable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -29,16 +30,20 @@ import javax.xml.parsers.DocumentBuilderFactory;
 public class ReadRss extends AsyncTask<Void,Void,Void> {
 
     Context context;
-    String address = "http://rss.upi.com/news/top_news.rss";
+    String address = "";
     ProgressDialog progressDialog;
     URL url;
     ArrayList<FeedItem>feedItems;
     RecyclerView recyclerView;
+    private Parcelable recyclerViewState;
     public ReadRss(Context context, RecyclerView recyclerView){
         this.context = context;
         this.recyclerView = recyclerView;
         progressDialog = new ProgressDialog(context);
         progressDialog.setMessage("Loading...");
+    }
+    public void setAddress(String url){
+        this.address = url;
     }
     @Override
     protected void onPreExecute() {
@@ -51,6 +56,7 @@ public class ReadRss extends AsyncTask<Void,Void,Void> {
         super.onPostExecute(aVoid);
         progressDialog.dismiss();
         MyAdapter adapter = new MyAdapter(context,feedItems);
+        recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(context));
         recyclerView.setAdapter(adapter);
         recyclerView.addItemDecoration(new VerticalSpace(10));

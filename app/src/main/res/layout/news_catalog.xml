@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.bishal.newsfeed.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="horizontal|vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="330dp"
+            android:id="@+id/top_stories"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/top_stories_thumbnail"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Top Stories"
+                android:textSize="30sp"
+                android:padding="10dp"
+                android:background="#80000000"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="330dp"
+            android:id="@+id/latest_news"
+            android:background="@drawable/latest_news_thumbnail"
+            android:layout_above="@+id/sports_news"
+            android:layout_toRightOf="@+id/top_stories"
+            android:layout_toEndOf="@+id/top_stories"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latest News"
+                android:textSize="30sp"
+                android:padding="10dp"
+                android:background="#80000000"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="330dp"
+            android:id="@+id/science_news"
+            android:background="@drawable/science_thumbnail"
+            android:layout_below="@+id/top_stories"
+            android:layout_alignLeft="@+id/top_stories"
+            android:layout_alignStart="@+id/top_stories"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Science"
+                android:textSize="30sp"
+                android:padding="10dp"
+                android:background="#80000000"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="330dp"
+            android:id="@+id/sports_news"
+            android:background="@drawable/sports_thumbnail"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/top_stories"
+            android:layout_alignLeft="@+id/latest_news"
+            android:layout_alignStart="@+id/latest_news">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sports"
+                android:textSize="30sp"
+                android:padding="10dp"
+                android:background="#80000000"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="330dp"
+            android:id="@+id/entertainment_news"
+            android:background="@drawable/entertainment_thumbnail"
+            android:layout_below="@+id/science_news"
+            android:layout_alignLeft="@+id/science_news"
+            android:layout_alignStart="@+id/science_news"
+            android:layout_marginTop="10dp"
+           >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entertainment"
+                android:textSize="30sp"
+                android:padding="10dp"
+                android:background="#80000000"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="330dp"
+            android:id="@+id/health_news"
+            android:background="@drawable/health_thumbnail"
+            android:layout_alignTop="@+id/entertainment_news"
+            android:layout_alignLeft="@+id/sports_news"
+            android:layout_alignStart="@+id/sports_news">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Health"
+                android:textSize="30sp"
+                android:padding="10dp"
+                android:background="#80000000"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="330dp"
+            android:id="@+id/energy_industry_news"
+            android:background="@drawable/energy_industry_thumbnail"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@+id/health_news"
+            android:layout_toLeftOf="@+id/latest_news"
+            android:layout_toStartOf="@+id/latest_news">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Energy Industry"
+                android:textSize="30sp"
+                android:padding="10dp"
+                android:background="#80000000"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="330dp"
+            android:id="@+id/security_industry_news"
+            android:background="@drawable/security_thumbnail"
+            android:layout_alignTop="@+id/energy_industry_news"
+            android:layout_alignLeft="@+id/health_news"
+            android:layout_alignStart="@+id/health_news">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Security Industry"
+                android:textSize="30sp"
+                android:padding="10dp"
+                android:background="#80000000"
+                />
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
+</LinearLayout>
