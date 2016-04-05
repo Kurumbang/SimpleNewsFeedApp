@@ -30,7 +30,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Top Stories"
+                android:text="@string/top_stories"
                 android:textSize="30sp"
                 android:padding="10dp"
                 android:background="#80000000"
@@ -48,7 +48,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Latest News"
+                android:text="@string/latest_news"
                 android:textSize="30sp"
                 android:padding="10dp"
                 android:background="#80000000"
@@ -68,7 +68,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Science"
+                android:text="@string/science_news"
                 android:textSize="30sp"
                 android:padding="10dp"
                 android:background="#80000000"
@@ -89,7 +89,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sports"
+                android:text="@string/sports_news"
                 android:textSize="30sp"
                 android:padding="10dp"
                 android:background="#80000000"
@@ -109,7 +109,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Entertainment"
+                android:text="@string/entertainment_news"
                 android:textSize="30sp"
                 android:padding="10dp"
                 android:background="#80000000"
@@ -127,7 +127,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Health"
+                android:text="@string/health_news"
                 android:textSize="30sp"
                 android:padding="10dp"
                 android:background="#80000000"
@@ -147,7 +147,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Energy Industry"
+                android:text="@string/energy_news"
                 android:textSize="30sp"
                 android:padding="10dp"
                 android:background="#80000000"
@@ -164,7 +164,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Security Industry"
+                android:text="@string/security_news"
                 android:textSize="30sp"
                 android:padding="10dp"
                 android:background="#80000000"

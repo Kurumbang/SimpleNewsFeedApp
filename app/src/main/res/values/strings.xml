@@ -7,4 +7,7 @@
     <string name="sports_news">Sports</string>
     <string name="entertainment_news">Entertainment</string>
     <string name="health_news">Health</string>
+    <string name="energy_news">Energy Industry</string>
+    <string name="security_news">Security Industry</string>
+    <string name="news_feed">News Feed</string>
 </resources>

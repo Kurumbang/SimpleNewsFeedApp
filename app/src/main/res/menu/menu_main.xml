@@ -2,34 +2,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.bishal.newsfeed.MainActivity">
-    <item
-        android:id="@+id/top_stories"
-        android:orderInCategory="100"
-        android:title="@string/top_stories"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/latest_news"
-        android:orderInCategory="100"
-        android:title="@string/latest_news"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/science_news"
-        android:orderInCategory="100"
-        android:title="@string/science_news"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/sports_news"
-        android:orderInCategory="100"
-        android:title="@string/sports_news"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/entertainment_news"
-        android:orderInCategory="100"
-        android:title="@string/entertainment_news"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/health_news"
-        android:orderInCategory="100"
-        android:title="@string/health_news"
-        app:showAsAction="never" />
+
+
 </menu>

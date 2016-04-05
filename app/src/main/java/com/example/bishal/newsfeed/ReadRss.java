@@ -35,7 +35,6 @@ public class ReadRss extends AsyncTask<Void,Void,Void> {
     URL url;
     ArrayList<FeedItem>feedItems;
     RecyclerView recyclerView;
-    private Parcelable recyclerViewState;
     public ReadRss(Context context, RecyclerView recyclerView){
         this.context = context;
         this.recyclerView = recyclerView;
@@ -66,7 +65,6 @@ public class ReadRss extends AsyncTask<Void,Void,Void> {
     protected Void doInBackground(Void... params) {
 
         processXML(getData());
-
 
         return null;
     }

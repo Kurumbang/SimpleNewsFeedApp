@@ -13,16 +13,6 @@ public class RssURL {
     String energy_industry_news = "http://rss.upi.com/news/sn_rw.rss";
     String security_industry_news = "http://rss.upi.com/news/bn_si.rss";
 
-   /* public void RssURl(){
-        this.top_stories = "http://rss.upi.com/news/top_news.rss";
-        this.latest_news = "http://rss.upi.com/news/news.rss";
-        this.science_news = "http://rss.upi.com/news/science_news.rss";
-        this.sports_news = "http://rss.upi.com/news/sports_news.rss";
-        this.entertainment_news = "http://rss.upi.com/news/entertainment_news.rss";
-        this.health_news = "http://rss.upi.com/news/health_news.rss";
-
-    }*/
-
     public String getTop_stories() {
         return top_stories;
     }
